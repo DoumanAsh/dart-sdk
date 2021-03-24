@@ -1,0 +1,14 @@
+[package]
+name = "dart-sdk-sys"
+version = "0.1.0"
+authors = ["Douman <douman@gmx.se>"]
+edition = "2018"
+keywords = ["dart", "bindings"]
+description = "Rust bindings to Dart SDK"
+categories = ["no-std", "development-tools::ffi", "external-ffi-bindings"]
+repository = "https://github.com/DoumanAsh/dart-sys"
+license = "BSL-1.0"
+
+[dependencies.dart-sdk-sys]
+version = "2.12.1"
+default-features = false
