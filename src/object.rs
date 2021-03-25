@@ -8,12 +8,15 @@ pub struct Object {
 
 impl core::ops::Deref for Object {
     type Target = sys::Dart_Handle;
+
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.inner
     }
 }
 
 impl core::ops::DerefMut for Object {
+    #[inline(always)]
     fn deref_mut(&mut self) -> &mut Self::Target {
         &mut self.inner
     }

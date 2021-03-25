@@ -1,6 +1,8 @@
 //!High level wrapper over Dart runtime
 
 #![no_std]
+#![warn(missing_docs)]
+#![cfg_attr(feature = "cargo-clippy", allow(clippy::style))]
 
 use core::fmt;
 use core::sync::atomic::{AtomicI64, Ordering};
@@ -63,5 +65,3 @@ impl fmt::Debug for Port {
         fmt::Debug::fmt(&self.get_raw(), fmt)
     }
 }
-
-
